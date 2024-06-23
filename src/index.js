@@ -14,7 +14,7 @@ app.get('/recipes', (req, res) => {
     {
       "recipes": [
         {
-          "title": "Spaghetti Carbonara",
+          "title": "Yessssss we finished the CICD workshop",
           "body": "Ingredients:\\n- 200g spaghetti\\n- 100g pancetta\\n- 2 large eggs\\n- 50g Pecorino cheese\\n- 50g Parmesan cheese\\n- Freshly ground black pepper\\n- Salt\\n- 1 garlic clove, peeled\\n- 50g unsalted butter\\n\\nInstructions:\\n1. Put a large saucepan of water on to boil.\\n2. Finely chop the pancetta, having first removed any rind.\\n3. Beat the eggs in a medium bowl, season with a little freshly grated black pepper and set everything aside.\\n4. Add the spaghetti to the water with a pinch of salt and cook according to the packet instructions.\\n5. Squash the garlic with the blade of a knife, just to bruise it.\\n6. While the spaghetti is cooking, heat the butter in a deep frying pan. Add the pancetta and garlic, and cook until the pancetta is crispy.\\n7. Remove and discard the garlic, then take the pan off the heat.\\n8. Save a cup of pasta water, then drain the spaghetti and add it to the pan with the pancetta. Toss everything together.\\n9. Mix most of the cheese in with the eggs, keeping a small handful back for sprinkling over later.\\n10. Add a little of the reserved pasta water to the egg mixture and stir quickly.\\n11. Pour the eggs and cheese into the pasta, stirring quickly to combine, so that the eggs thicken but do not scramble.\\n12. Adjust the consistency with more pasta water if necessary, then season with salt and pepper.\\n13. Serve immediately, with the remaining cheese sprinkled on top."
         },
         {

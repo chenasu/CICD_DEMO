@@ -4,7 +4,7 @@ describe('Array', ()=>{
     describe("#sort", ()=>{
         it("should sort arrays", ()=>{
             var names = ['Dani', 'Moshe', 'Adam'];
-            expect(names.sort()).to.be.eql(['Adam', 'Dani2', 'Moshe']);
+            expect(names.sort()).to.be.eql(['Adam', 'Dani', 'Moshe']);
         });
     })
 })
