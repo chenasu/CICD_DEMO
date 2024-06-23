@@ -11,5 +11,5 @@ export default [
       semi: ['error', 'always']
     }
   },
-  pluginJs.configs.recommended,
+  // pluginJs.configs.recommended,
 ];
