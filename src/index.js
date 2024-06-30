@@ -32,7 +32,7 @@ app.get('/recipes', (req, res) => {
   res.send(recipesJson);
 });
 
-app.post('/names', (req, res) => {
+app.post('/names', (req, res) => { 
   const names = req.body;
   console.log("Got new post message: ", JSON.stringify(names));
   res.json({massage: "Hey I got your message!", names: names});
