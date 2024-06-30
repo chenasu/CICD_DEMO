@@ -7,7 +7,6 @@ const port = process.env.PORT || 3002;
 app.use(cors());
 app.use(express.json());
 
-
 app.use((req, res, next) => {
   console.log('middleware - Body:', req.body);
   next();
@@ -37,23 +36,20 @@ app.get('/recipes', (req, res) => {
   res.send(recipesJson);
 });
 
-
 app.post('/', function (req, res) {
   const body = req.body;
-  console.log("request body: " + JSON.stringify(body));
+  console.log('request body: ' + JSON.stringify(body));
   res.json({ message: 'POST request received', data: body });
 });
 
-
 // Define a POST endpointapp.post('/data', (req, res) => {
-  app.post('/data', (req, res) => {
-    const requestBody = req.body;
-    console.log(requestBody);
-    res.json({ message: 'POST request received', data: requestBody });
-  });
+app.post('/data', (req, res) => {
+  const requestBody = req.body;
+  console.log(requestBody);
+  res.json({ message: 'POST request received', data: requestBody });
+});
 
-  // Middleware to log requests for debugging
-
+// Middleware to log requests for debugging
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
