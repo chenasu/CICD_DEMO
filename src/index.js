@@ -2,15 +2,11 @@ import express from 'express';
 import cors from 'cors';
 
 const app = express();
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
 
-app.use((req, res, next) => {
-  console.log('middleware - Body:', req.body);
-  next();
-});
 app.get('/', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send('{ text: Hello World!}');
@@ -36,20 +32,11 @@ app.get('/recipes', (req, res) => {
   res.send(recipesJson);
 });
 
-app.post('/', function (req, res) {
-  const body = req.body;
-  console.log('request body: ' + JSON.stringify(body));
-  res.json({ message: 'POST request received', data: body });
+app.post('/names', (req, res) => {
+  const names = req.body;
+  console.log("Got new post message: ", JSON.stringify(names));
+  res.json({massage: "Hey I got your message!", names: names});
 });
-
-// Define a POST endpointapp.post('/data', (req, res) => {
-app.post('/data', (req, res) => {
-  const requestBody = req.body;
-  console.log(requestBody);
-  res.json({ message: 'POST request received', data: requestBody });
-});
-
-// Middleware to log requests for debugging
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
