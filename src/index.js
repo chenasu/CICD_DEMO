@@ -34,8 +34,8 @@ app.get('/recipes', (req, res) => {
 
 app.post('/names', (req, res) => { 
   const names = req.body;
-  console.log("Got new post message: ", JSON.stringify(names));
-  res.json({massage: "Hey I got your message!", names: names});
+  console.log('Got new post message: ', JSON.stringify(names));
+  res.json({massage: 'Hey I got your message!', names: names});
 });
 
 app.listen(port, () => {
